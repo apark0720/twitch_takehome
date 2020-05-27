@@ -1,0 +1,82 @@
+{
+  "name": "ventura",
+  "version": "2.0.0",
+  "description": "Twitch React Test",
+  "main": "index.html",
+  "scripts": {
+    "start": "yarn && webpack-dev-server",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|sass|scss)$": "identity-obj-proxy",
+      "\\.(png|svg)$": "<rootDir>/src/__tests__/utils/file-importer.ts",
+      "^ventura/(.*)": "<rootDir>/source/$1",
+      "^ventura$": "<rootDir>/source/"
+    },
+    "transform": {
+      "\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "__tests__/utils"
+    ],
+    "testURL": "http://localhost/",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-redux": "5.0.6",
+    "react-router-dom": "4.2.2",
+    "react-select": "^3.0.8",
+    "react-virtualized-auto-sizer": "^1.0.2",
+    "react-window": "^1.8.5",
+    "redux": "3.7.2",
+    "redux-thunk": "2.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.0",
+    "@types/react": "^16.0.37",
+    "@types/react-dom": "16.0.3",
+    "@types/react-redux": "5.0.15",
+    "@types/react-router": "4.0.22",
+    "@types/react-router-dom": "4.2.4",
+    "@types/react-select": "^3.0.5",
+    "@types/react-virtualized-auto-sizer": "^1.0.0",
+    "@types/react-window": "^1.8.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "23",
+    "jest-enzyme": "^6.0.0",
+    "node-sass": "^4.9.0",
+    "react-test-renderer": "^16.2.0",
+    "sass-lint": "^1.12.1",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "ts-jest": "23.1.4",
+    "ts-loader": "^4.3.0",
+    "tslint": "^5.8.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-fix": "^0.1.0",
+    "tslint-react": "^3.0.0",
+    "typescript": "3",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}

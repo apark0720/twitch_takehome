@@ -1,0 +1,12 @@
+build
+dist
+node_modules
+npm-debug.log
+.DS_STORE
+.package.json.mtime
+*.orig
+*.rej
+tags
+.tags
+.tags1
+yarn-error.log

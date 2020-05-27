@@ -1,0 +1,29 @@
+@import 'ventura/assets/stylesheets/colors';
+
+.nav-item-container {
+  display: inline-block;
+  cursor: pointer;
+  
+  &-highlighted {    
+    @extend .nav-item-container;
+    color: $light-purple;
+    border-bottom: 2px solid $light-purple;
+  }
+}
+
+.nav-menu-item {
+  color: $white;
+  font-size: 18px;
+  margin: 0px;
+  padding: 10px 0px 14px 0px;
+  cursor: pointer;
+
+  &-highlighted {
+    @extend .nav-menu-item;
+    color: $light-purple;
+  }
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}

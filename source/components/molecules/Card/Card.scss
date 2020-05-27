@@ -1,0 +1,24 @@
+@import 'ventura/assets/stylesheets/colors';
+
+.game-card {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 256px;
+  padding: 50px 10px;
+  cursor: pointer;
+
+   &-selected {    
+    @extend .game-card;
+    border-bottom: 2px solid $purple;
+  }
+}
+
+
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+}

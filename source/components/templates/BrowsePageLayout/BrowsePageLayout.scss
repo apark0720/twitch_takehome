@@ -1,0 +1,14 @@
+#default-layout {
+  display: grid;
+  grid-template-columns: 0px 1fr;
+  grid-template-rows: 100vh;
+  grid-template-areas: 'detail-pane main-grid';
+}
+
+#expanded-layout {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-template-rows: 100vh 100vh;
+  grid-template-areas: 'detail-pane main-grid';
+}
+

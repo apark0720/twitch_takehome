@@ -1,0 +1,12 @@
+@import 'ventura/assets/stylesheets/colors';
+
+#load-more {
+  cursor: not-allowed;
+
+  svg {
+    height: 20px;
+    width: 20px;
+    fill: $white;
+    padding-top: 12px;
+  }
+}
