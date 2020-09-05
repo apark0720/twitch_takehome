@@ -63,7 +63,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "23",
     "jest-enzyme": "^6.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "react-test-renderer": "^16.2.0",
     "sass-lint": "^1.12.1",
     "sass-loader": "^7.0.1",
